@@ -17,6 +17,6 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /www/vital/text-reverse
+        server-dir: /www/vital/text-reverse/
         local-dir: ./
         dry-run: false
