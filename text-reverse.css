@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+body {
+
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(56,185,164,1) 0%, rgba(73,119,126,1) 100%);
+    color: white;
+
+}
+
+.block {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    padding: 35px;
+    border-radius: 15px;
+
+}
+
+.bg {
+
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    color: white;
+    border-radius: 7px;
+    padding: 7px;
+    position: absolute;
+    width: max-content;
+
+}
+
+.text {
+
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.input {
+
+    font-size: 1em;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
+    width: 80%;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: white 2px solid;
+    color: white;
+    outline: none;
+    text-align: center;
+    bottom: 325px;
+    height: max-content;
+
+}
+
+.btn {
+
+    border: none;
+    transition: 1.2s;
+    cursor: pointer;
+    font-size: 1em;
+
+}
+
+.btn:nth-child(2) {
+
+    bottom: 270px;
+
+}
+
+.btn:nth-child(1) {
+
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.btn:hover {
+
+    letter-spacing: 3px;
+
+}
+
+.btn:active {
+
+    letter-spacing: 3px;
+
+}
+
+.timer {
+
+    bottom: 190px; 
+
+}
+
+.score {
+
+    bottom: 110px;
+
+}
+
+.scoreBest {
+
+    bottom: 110px;
+    right: 35px;
+
+
+}
+
+.footer {
+
+    font-size: 0.8em;
+    text-decoration: none;
+    bottom: 30px;
+
+}
+
+::placeholder {
+
+    color: white;
+
+}
+
+.lost {
+
+    text-align: center;
+    font-size: 3em;
+    position: relative;
+    display: none;
+    top: 50px;
+
+}
+
+.popup {
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    width: 200px;
+    padding: 10px;
+    line-height: 25px;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .block {
+
+        width: 90vw;
+        height: 90vh;
+    
+    }
+}
