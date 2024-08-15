@@ -15,25 +15,6 @@ const scoreBestTxt = document.querySelector(".scoreBest");
 const popup = document.querySelector(".popup");
 const popupBtn = document.getElementById("btnOk");
 
-const words = `
-bournmouth
-plage
-école
-éduactionfirst
-unionhouse
-lunch
-subway
-papajones
-ririburger
-skyline
-picadili
-cantine
-cash
-bitcoin
-crypto
-avion
-`;
-
 const wordArray = words.trim().split('\n');
 
 let score = 0;

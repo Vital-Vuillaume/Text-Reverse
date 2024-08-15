@@ -41,6 +41,7 @@ body {
     padding: 7px;
     position: absolute;
     width: max-content;
+    transition: 1.2s;
 
 }
 
@@ -68,13 +69,14 @@ body {
     text-align: center;
     bottom: 325px;
     height: max-content;
+    border-radius: 0px;
+    transition: 1.2s;
 
 }
 
 .btn {
 
     border: none;
-    transition: 1.2s;
     cursor: pointer;
     font-size: 1em;
 
@@ -170,5 +172,28 @@ body {
         width: 90vw;
         height: 90vh;
     
+    }
+
+    .input:focus {
+
+        bottom: 100px;
+
+    }
+
+    .input:focus ~ .score {
+        display: none;
+    }
+    
+    .input:focus ~ .scoreBest {
+        display: none;
+    }    
+    
+    .input:focus ~ .btn:nth-child(2) {
+        bottom: 70px;
+    }
+    
+    .input:focus ~ .timer {
+        bottom: 70px;
+        left: 110px;
     }
 }
