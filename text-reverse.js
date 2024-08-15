@@ -1,8 +1,8 @@
 //------Https------\\
 
-/*if (window.location.protocol != "https:") {
+if (window.location.protocol != "https:") {
   window.location.protocol="https:";
-}*/
+}
 
 const text = document.querySelector(".text");
 const input = document.querySelector(".input");
