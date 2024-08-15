@@ -162,7 +162,31 @@ body {
     padding: 10px;
     line-height: 25px;
     text-align: center;
-    display: none;
 
 }
 
+@media screen and (max-width: 400px) {
+
+    .input:focus {
+
+        bottom: 100px;
+
+    }
+
+    .input:focus ~ .score {
+        display: none;
+    }
+    
+    .input:focus ~ .scoreBest {
+        display: none;
+    }    
+    
+    .input:focus ~ .btn:nth-child(2) {
+        bottom: 70px;
+    }
+    
+    .input:focus ~ .timer {
+        bottom: 70px;
+        left: 110px;
+    }
+}
