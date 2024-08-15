@@ -165,3 +165,19 @@ body {
 
 }
 
+@media screen and (max-width: 400px) {
+
+    .text {
+
+        position: relative;
+        top: 50px;
+
+    }
+
+    .input {
+
+        bottom: 380px;
+
+    }
+
+}
