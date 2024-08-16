@@ -125,7 +125,6 @@ body {
     bottom: 110px;
     right: 35px;
 
-
 }
 
 .footer {
@@ -133,6 +132,15 @@ body {
     font-size: 0.8em;
     text-decoration: none;
     bottom: 30px;
+
+}
+
+.btc {
+
+    font-size: 1em;
+    text-decoration: none;
+    bottom: 30px;
+    right: 35px;
 
 }
 
