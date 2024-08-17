@@ -102,12 +102,6 @@ body {
 
 }
 
-.btn:active {
-
-    letter-spacing: 3px;
-
-}
-
 .timer {
 
     bottom: 190px; 
@@ -174,6 +168,12 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+
+    .btn:hover {
+
+        letter-spacing: normal;
+    
+    }
 
     .text {
 
