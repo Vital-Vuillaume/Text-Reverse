@@ -76,7 +76,7 @@ function reverseWord(word) {
 }
 
 function correctWord() {
-  if (input.value === word) {
+  if (input.value.toLowerCase() === word) {
     score++;
     scoreTxt.textContent = "Score: " + score;
     input.value = "";
