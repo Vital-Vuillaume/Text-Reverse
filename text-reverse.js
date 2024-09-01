@@ -68,10 +68,14 @@ popupBtn.addEventListener("click", function() {
 
 function reverseWord(word) {
   let array = word.split('');
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
+
+  do {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  } while (array.join('') === word);
+
   return array.join('');
 }
 
