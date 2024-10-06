@@ -4,6 +4,7 @@ if (window.location.protocol != "https:") {
   window.location.protocol="https:";
 }
 
+const block = document.querySelector(".block");
 const text = document.querySelector(".text");
 const input = document.querySelector(".input");
 const btn = document.getElementById("btnValider");
@@ -63,6 +64,7 @@ function newWord() {
 
 popupBtn.addEventListener("click", function() {
   popup.style.display = "none";
+  block.style.filter = "blur(0px)";
   newWord();
 });
 
